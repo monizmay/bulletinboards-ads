@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name='viewport' content='width=device-width'>
+  <title>Bulletin Board</title>
+  <link rel="icon" href="./images/cndj_32x32.png" type="image/png">
+  <script type="module"
+    src='./lib/ui5/bundle.js'></script>
+</head>
+
+<body class='sapUiBody'>
+  <script type='module'>
+    import { html, render } from './webjars/htm/3.1.1/preact/standalone.module.js'
+    import App from './app.js'
+    import Client from './client.js'
+    render(html`<${App} client=${new Client()} />`, document.body)
+  </script>
+</body>
+
+</html>
